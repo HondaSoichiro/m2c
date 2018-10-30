@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import firebase from 'firebase'
+import VueRippler from 'vue-rippler'
+
+Vue.use(VueRippler)
 
 Vue.config.productionTip = false
 

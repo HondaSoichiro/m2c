@@ -13,7 +13,6 @@
 
 <script>
 import firebase from 'firebase'
-
 export default {
   name: 'Signin',
   data: function () {
@@ -26,7 +25,6 @@ export default {
     signIn: function () {
       firebase.auth().signInWithEmailAndPassword(this.username, this.password).then(
         user => {
-          alert('Success!')
           this.$router.push('/')
         },
         err => {

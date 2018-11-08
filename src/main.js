@@ -20,6 +20,7 @@ const config = {
 }
 // eslint-disable-next-line
 firebase.initializeApp(config);
+firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
 
 /* eslint-disable no-new */
 new Vue({
